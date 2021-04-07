@@ -1,6 +1,8 @@
 # cotizaciones_uy
 
-A new Flutter project.
+
+Cotizacion monedas internacionales BROU (Uruguay)
+
 
 ## Getting Started
 
