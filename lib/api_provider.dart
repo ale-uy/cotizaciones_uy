@@ -2,7 +2,8 @@ import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 
 Future fetchPost() async {
-  var url = Uri.https('bubbadev.herokuapp.com', '/api_brou/v1');
+  var url = Uri.https(
+      'https://cotizaciones-brou.herokuapp.com/api/currency', '/latest');
   final response = await http.get(url);
   if (response.statusCode == 200) {
     return convert.jsonDecode(response.body);

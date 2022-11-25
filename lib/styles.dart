@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 
 TextStyle valuesStyle() => TextStyle(
@@ -25,9 +24,9 @@ Color back() => Colors.blue[900];
 
 ButtonStyle button() => ElevatedButton.styleFrom(
       shape: RoundedRectangleBorder(),
+      backgroundColor: Colors.white,
       elevation: 5.0,
       shadowColor: Colors.black,
-      primary: Colors.white,
     );
 
 ButtonStyle circles() => ElevatedButton.styleFrom(
