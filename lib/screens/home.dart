@@ -1,23 +1,16 @@
+import 'package:cotizaciones_uy/widgets/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:cotizaciones_uy/api_provider.dart';
-import 'package:cotizaciones_uy/my_widgets.dart';
 
 class MyHomePage extends StatefulWidget {
-  final Future post;
-  MyHomePage({Key key, this.post}) : super(key: key);
+  MyHomePage({
+    Key key,
+  }) : super(key: key);
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Future post;
-  @override
-  void initState() {
-    super.initState();
-    post = fetchPost();
-  }
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -38,7 +31,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   filas('Euro'),
                   filas('Peso Argentino'),
                   filas('Real'),
-                  filas('Guarani'),
                 ],
               ),
             )));

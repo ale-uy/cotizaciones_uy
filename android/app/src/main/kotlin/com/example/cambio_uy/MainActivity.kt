@@ -1,4 +1,4 @@
-package com.example.cotizaciones_uy
+package com.example.cambio_uy
 
 import io.flutter.embedding.android.FlutterActivity
 

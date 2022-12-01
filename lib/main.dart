@@ -1,12 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:cotizaciones_uy/home.dart';
-import 'package:cotizaciones_uy/styles.dart';
+
+import 'model/api.dart';
+import 'screens/home.dart';
+import 'widgets/styles.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MyApp(data: fetchPost()),
+  );
 }
 
 class MyApp extends StatelessWidget {
+  final Future data;
+
+  MyApp({Key key, this.data}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
