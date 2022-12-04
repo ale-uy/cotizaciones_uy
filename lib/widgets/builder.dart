@@ -15,7 +15,11 @@ FutureBuilder cambio(String money, int type, Function estilo) => FutureBuilder(
                 style: estilo());
           }
         } else if (snapshot.hasError) {
-          return Text("${(snapshot.error).toString()}");
+          if (money == 'Moneda') {
+            return Text('Moneda', style: estilo());
+          } else {
+            return Text('---', style: estilo());
+          }
         }
         return CircularProgressIndicator();
       },
